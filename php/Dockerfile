@@ -1,6 +1,7 @@
 # Set the base image to centos6.8
 FROM centos:6.8
 
+#author
 MAINTAINER SunnySmilez phpchengxuyuan@sina.com
 
 # php build
