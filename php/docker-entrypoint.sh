@@ -8,6 +8,4 @@ else
     # 默认值
     RUN_ENV="dev"
     ln -sf /usr/local/php/lib/php.dev.ini /usr/local/php/lib/php.ini
-    service crond start
-    crontab /data/htdocs/"$APP_NAME"/app/Console/crontab
 fi
