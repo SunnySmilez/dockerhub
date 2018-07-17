@@ -13,3 +13,4 @@ else
         crontab /data/htdocs/"$APP_NAME"/bin/crontab
     fi
 fi
+exec "$@"
