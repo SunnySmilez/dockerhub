@@ -8,4 +8,8 @@ else
     # 默认值
     RUN_ENV="dev"
     ln -sf /usr/local/php/lib/php.dev.ini /usr/local/php/lib/php.ini
+    if [ "php-fpm" = "$1" ]; then
+        service crond start
+        crontab /data/htdocs/"$APP_NAME"/bin/crontab
+    fi
 fi
